@@ -8,7 +8,7 @@ fn main() {
     println!("Please enter you guess");
 
     let mut guess = String::new();
-    let rand_number = rand::thread_rng().gen_range(1..=100);
+    let rand_number = rand::rng().random_range(1..=100);
     let mut _output_msg = "You have guessed {}";
 
     let err_msg = "Something went wrong. {}";
